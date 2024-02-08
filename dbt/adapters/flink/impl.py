@@ -79,8 +79,8 @@ class FlinkAdapter(BaseAdapter):
 
     @classmethod
     def quote(cls, identifier: str) -> str:
-        return identifier
-        # return '"{}"'.format(identifier)
+        # return identifier
+        return '`{}`'.format(identifier)
 
     def rename_relation(self, from_relation: BaseRelation, to_relation: BaseRelation) -> None:
         pass
